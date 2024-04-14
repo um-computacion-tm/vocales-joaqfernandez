@@ -2,10 +2,10 @@ def contar_vocales(mi_string):
     vocales = ('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
     resultado = {}
     for letra in mi_string:
-        if letra == "a":
+        if letra in vocales:
             if 'a' not in resultado:
-                resultado ['a'] = 0
-        resultado ['a'] = resultado ['a'] + 1 
+                resultado [letra] = 0
+        resultado [letra] +=  1 
         if letra == "e":
             if 'e' not in resultado:
                 resultado ['e'] = 0
